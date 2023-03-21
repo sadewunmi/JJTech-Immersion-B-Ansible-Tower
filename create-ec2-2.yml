@@ -10,7 +10,7 @@
       - name: Provision instance(s)
         ec2:
           key_name: "{{ key_name }}"
-          group_id: "{{ sec_group }}"
+          security_group: "{{ sec_group }}"
           image: "{{ image }}"
           instance_type: "{{ instance_type }}"
           region: "{{ region }}"
